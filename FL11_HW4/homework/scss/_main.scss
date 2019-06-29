@@ -1,0 +1,248 @@
+body {
+	margin: 0px;
+	background-color: $backgColor;
+}
+.header {
+    width: 100%;
+	height: 100vh;
+	background-image: $headerBackgImage;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	border-radius: 0px 0px 30em/15em 0px;
+}
+.header-wrap {
+	width: 100%;
+	max-width: 1080px;
+	padding: 20px;
+}
+.landing-logo {
+	display: flex;
+	img {
+		margin-right: 20px;
+	}
+	p {  
+	    margin: 0px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    font-family: $footerFont;
+        font-weight: 600;
+    	font-size: 24px;
+    	line-height: 1;
+	    align-items: center;
+	    color: $headerTextColor;
+    	span {
+    		font-weight: 400;
+    		font-size: 13px;
+    	}
+	}
+}
+.header_heading {
+    max-width: 500px;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 30px;
+	margin-top: 60px;
+	font-family: $mainFont;	
+	font-size: 70px;
+	font-weight: 800;
+	color: $headerTextColor;
+    line-height: 1;
+	&:after {
+		content: "";
+		display: block;
+		width: 293px;
+		height: 20px;
+		background-color: $underScoreColor;
+		position: absolute;
+		bottom: 3px;
+		z-index: -1;
+	}
+}
+.header_text {
+	font-family: $footerFont;
+	color: $headerTextColor;
+	white-space: pre-line;
+	line-height: 1.5;
+	margin-bottom: 55px;
+}
+.header_button, .section_banner_button {
+	background-color: $buttonColor;
+	height: 48px;
+	width: 145px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: $mainFont;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $headerBackgImage;
+	position: relative;
+}
+.section_card_wrap {
+	width: 100%;
+	max-width: 1080px;
+	padding: 20px;
+	display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    margin-bottom: 150px;
+}
+.section_card {
+    width: 320px;
+	height: 380px;
+	display: flex;
+	flex-direction: column;
+	background-color: $footerColor;
+	padding: 20px;
+	margin-right: 20px;
+	border-radius: 5px;
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+.section_card_img {
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 5px;
+}
+.section_text {
+	font-family: $mainFont;
+    font-weight: 600;
+    font-size: 40px;
+	color: $headerTextColor;
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: "";
+		position: absolute;
+		width: 170px;
+		height: 10px;
+		background-color: $underScoreColor;
+	    bottom: 8px;
+    	right: 13px;
+    	z-index: -1;
+	}
+}
+.section_card_heading {
+    font-family: $mainFont;
+	color: white;
+	font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    &:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 9px;
+		background-color: $underScoreColor;
+		position: absolute;
+		bottom: 0px;
+		z-index: -1
+    }
+}
+.section_card_text {
+	font-family: $footerFont;
+	color: $sectionTextColor;
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.5;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+.section_banner {
+	width: 840px;
+	background: $gradient;
+	border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    left: 420px;
+    bottom: -60px;
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    align-items: center;
+}
+.section_banner_heading {
+	font-family: $mainFont;
+	color: $headerTextColor;
+	font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    z-index: 1;
+    position: relative;
+    &:after {
+		content: "";
+		display: block;
+		width: 54px;
+		height: 9px;
+    	left: 97px;
+		background-color: $underScoreColor;
+		position: absolute;
+		bottom: 5px;
+		z-index: -1;
+    }
+}
+.section_banner_text {
+	color: $sectionTextColor;
+	font-family: $footerFont;
+}
+.footer {
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	background-color: $footerColor;
+	z-index: 1;
+	position: relative;
+}
+.footer-wrap {
+	width: 100%;
+	max-width: 1080px;
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	padding-top: 75px;	
+}
+.footer_logo {
+	width: max-content;
+	height: max-content;
+	p {
+	    font-family: $footerFont;
+		color: $sectionTextColor;
+		span {
+			font-weight: 600;
+		}
+	}
+}
+.footer_text {
+	max-width: 265px;
+	height: max-content;
+	font-family: $footerFont;
+	color: $sectionTextColor;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.footer-cr {
+	height: max-content;
+	font-family: $footerFont;
+	color: #C0C3CE;
+	font-size: 14px;
+}
