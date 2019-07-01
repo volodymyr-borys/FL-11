@@ -1,0 +1,269 @@
+
+body {
+  font-family: roboto;
+}
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 80%;
+  font-family: roboto;
+  background: #0b192f;  
+  margin: 0 auto;
+}
+.navBlock{
+  display: none;
+}
+header{
+  height: 100px;
+  background: #162b4d;
+  color: #FFFFFF;
+  font-weight: 100;
+}
+header span{
+  color:#B71757;
+}
+header h1{
+  font-weight: 200;
+}
+nav{
+  float: right;
+  padding: 40px 50px 0 0;
+}
+nav a{
+  text-decoration: none;
+  color:#fff;
+  padding: 10px;
+}
+nav a:hover {
+  background: #283d5f;
+}
+h1{
+  float: left;
+  padding: 30px;
+}
+main{
+  width: 70%;
+  float: left;
+  margin: 20px 20px 20px 0; 
+}
+article{
+  width: 100%;
+  display: flex;
+  color:white;
+}
+img{ 
+  width: 100%;
+  height: 100%;
+}
+.dateBlock{
+  width: 10%;
+}
+.number{
+  font-size: 4vw;
+  font-size: 30px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.5);
+}
+.month{
+  font-size: 2vw;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+}
+.image{
+  width: 50%;
+}
+.text{
+  width: 30%;
+  padding: 5%;
+}
+.text h2{
+  font-weight: 300;
+  font-size: 3vw;
+}
+.text p{
+  font-weight: 300;
+  font-size: 1vw;
+  font-size: 15px;
+  line-height: 2vw;
+}
+.text:hover, .image:hover, .text-full:hover, .date-create:hover{
+   opacity: 0.5;
+   cursor: pointer;
+}
+.textConclusion{
+  width: 90%;
+  padding: 5%;
+}
+.textConclusion h2{
+  font-weight: 300;
+  font-size: 3vw;
+}
+.textConclusion p{
+  font-weight: 300;
+  font-size: 1vw;
+  font-size: 15px;
+}
+main article:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+main article:nth-child(even) h2{
+  text-align: right;
+}
+main article:nth-child(even) p{
+  text-align: right;
+}
+main article:nth-child(even) {
+  flex-direction: row;
+}
+article,footer{
+  color: rgba(255, 255, 255, 0.7);
+}
+aside{
+  width: 25%;
+  float: right;
+}
+aside article{
+  flex-direction: column;
+  color: black;
+  background: #FFFFFF;
+  margin: 20px 0 20px 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+.newsText{
+  padding: 10%;
+}
+.newsText h2{
+  font-weight: 400;
+  font-size: 2.5vw;
+}
+.newsText p{
+  font-weight: 300;
+  font-size: 1vw;
+  font-size: 15px;
+}
+footer{
+  height: 100px;
+  clear: both;
+  background-color: #162b4d;  
+  margin: 0 0 10px 0;
+}
+.leftText{
+  float: left;
+  width: 70%;
+  font-size: 1vw;
+  font-size: 15px;
+  padding: 30px 10px 30px 10px;
+}
+.rightText{
+  width: 15%;
+  float: right;
+  font-size: 1vw;
+  font-size: 15px; 
+  padding: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  main article:nth-child(even), main article:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+nav{
+  display: none;
+  }
+.navBlock{
+  display: block;
+  text-align: center;
+}
+main{
+    width: 55%;
+  }
+.text{
+  width: 95%;
+  padding: 5%;
+}
+.dateBlock{
+  width: 100%;
+}
+.image{
+  width: 100%;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+main article:nth-child(even) h2, main article:nth-child(even) p{
+  text-align: left;
+}
+main article:nth-child(even) p.date,main article:nth-child(odd) p.date{
+  text-align: center;
+}
+.text h2{
+  font-size: 5vw;
+}
+.newsText h2{ 
+  font-size: 4vw;
+}
+.textConclusion h2{
+  font-size: 5vw;
+}
+.text p{
+  line-height: 3vw;
+}
+h1{
+  float: none;
+  text-align: center;
+}
+aside{
+  width: 35%;
+  float: right;
+}
+footer{
+  height: 150px;
+}
+.leftText{
+  width: 100%;
+  text-align: center;
+  padding:30px 0 0 0;
+}
+.rightText{
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+}
+}
+@media only screen and (max-width: 480px) {
+  main {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 20px 0 0 0;
+     }
+  .text p{
+    line-height: 5vw; 
+     }
+  aside{
+    width: 100%;
+     }
+  aside article{
+    margin-top: 0px; 
+     }
+
+}
+
+
